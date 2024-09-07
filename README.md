@@ -29,7 +29,7 @@ For example:
 - To send a message, use the format: **`@[recipient username] [message]`**.
 - Received messages will be automatically displayed in the client terminal.
 
-#### Required Libraries
+#### **Required Libraries** 
 Ensure the following libraries are installed on your system:
 
 ##### Standard Libraries:
@@ -52,7 +52,7 @@ If you are using Ubuntu or another Debian-based system, install the OpenSSL libr
 - `sudo apt update`
 - `sudo apt install libssl-dev`
 
-###### Design Choices:
+###### **Design Choices**
 1. **RSA Encryption**: Messages between clients are encrypted using RSA to ensure confidentiality. Only the intended recipient with the correct private key can decrypt the message.
 2. **Digital Signatures**: Messages are signed using the sender's private key, allowing the recipient to verify the sender's identity and ensure message integrity.
 3. **Multi-threaded Communication**: The client uses separate threads for sending and receiving messages to ensure smooth, concurrent operations.
