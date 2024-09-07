@@ -53,6 +53,7 @@ If you are using Ubuntu or another Debian-based system, install the OpenSSL libr
 - `sudo apt install libssl-dev`
 
 ###### **Design Choices**
+
 1. **RSA Encryption**: Messages between clients are encrypted using RSA to ensure confidentiality. Only the intended recipient with the correct private key can decrypt the message.
 2. **Digital Signatures**: Messages are signed using the sender's private key, allowing the recipient to verify the sender's identity and ensure message integrity.
 3. **Multi-threaded Communication**: The client uses separate threads for sending and receiving messages to ensure smooth, concurrent operations.
